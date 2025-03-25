@@ -54,7 +54,7 @@ function renderTables() {
       <td><span onclick="editFeed(${i})">${f.display}</span></td>
 
       <td>${formatHM(diff)}</td>
-      <td><img src="icons/cross.svg" style="width:16px;cursor:pointer" onclick="deleteFeed(${i})" /></td>
+      <td><img src="cross.svg" style="width:16px;cursor:pointer" onclick="deleteFeed(${i})" /></td>
     `;
     feedTable.appendChild(tr);
   });
