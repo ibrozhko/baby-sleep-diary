@@ -18,7 +18,7 @@ h2 {margin: 0;}
   margin-bottom: 30px;
 }
 .block-time {
-  background-color: #5137E7;
+  background-color: #3B73D7;
   height: 180px;
   display: flex;
   flex-direction: column;
@@ -43,7 +43,7 @@ h2 {margin: 0;}
 .actions button {
   width: 60px;
   height: 60px;
-  background-color: #5137E7;
+  background-color: #3B73D7;
   border-color: #FFFFFF;
   border-radius: 10px;
   padding: 5px;
@@ -72,7 +72,7 @@ h2 {margin: 0;}
 .date-picker {
   width: 380px;
   height: 52px;
-  background-color: #27AEC8;
+  background-color: #3B73D7;
   color: #FFFFFF;
   font-size: 36px;
   display: flex;
@@ -117,7 +117,7 @@ th, td {
   text-align: center;
 }
 .color-b {
-  background-color: #25AFC7;
+  background-color: #3B73D7;
 }
 .color-c {
   background-color: #3B73D7;
