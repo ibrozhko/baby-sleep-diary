@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Щоденник сну дитини</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    <link rel="manifest" href="manifest.json" />
+    <meta name="theme-color" content="#5137E7" />
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('service-worker.js').then(() => {
+          console.log('✅ Service Worker зареєстрований!');
+        });
+      }
+    </script>
+  </head>
+  <body>
+    <main class="container">
+      <!-- Верхній блок з часом -->
+      <section class="block block-time">
+        <div class="time-display">
+          <span id="current-time">00:00</span>
+          <button id="edit-time">
+            <img src="icons/clock.svg" alt="Edit Time" />
+          </button>
+        </div>
+        <div class="actions">
+          <button id="sleep-btn">
+            <img src="icons/sleep.svg" alt="Sleep" />
+          </button>
+          <button id="wake-btn"><img src="icons/wake.svg" alt="Wake" /></button>
+          <button id="feed-btn"><img src="icons/feed.svg" alt="Feed" /></button>
+        </div>
+      </section>
+
+      <!-- Два блоки стану поруч -->
+      <div class="row">
+        <section class="block block-status color-b">
+          <div class="status-title" id="sleep-status-title">–</div>
+          <div class="status-timer" id="sleep-timer">–</div>
+        </section>
+        <section class="block block-status color-c">
+          <div class="status-title">З останнього годування</div>
+          <div class="status-timer" id="feed-timer">–</div>
+        </section>
+      </div>
+
+      <!-- Дата  -->
+      <div class="row">
+        <div class="block date-picker">
+          <button class="nav-btn" id="prev-date">&lt;</button>
+          <span id="current-date">01.01.2025</span>
+          <button class="nav-btn" id="next-date">&gt;</button>
+        </div>
+        <button class="block excel-btn">Завантажити Excel</button>
+      </div>
+
+      <!-- Таблиці поруч -->
+      <div class="row">
+        <section class="block block-table color-b">
+          <h2>Сон</h2>
+          <table id="sleep-table">
+            <thead>
+              <tr>
+                <th>Заснув</th>
+                <th>Прокинувся</th>
+                <th>Тривалість</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </section>
+
+        <section class="block block-table color-c">
+          <h2>Годування</h2>
+          <table id="feed-table">
+            <thead>
+              <tr>
+                <th>Час</th>
+                <th>З моменту</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </section>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,204 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #EBEBEB;
+  font-family: 'Rubik', sans-serif;
+  color: #FFFFFF;
+}
+h2 {margin: 0;}
+.container {
+  width: 800px;
+  margin: 0 auto;
+  padding: 30px;
+}
+.block {
+  border-radius: 16px;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-bottom: 30px;
+}
+.block-time {
+  background-color: #5137E7;
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.time-display {
+  font-size: 64px;
+  display: flex;
+  align-items: center;
+}
+
+.time-display button {
+  background: none;
+  border: none;
+  margin-left: 10px;
+}
+.actions {
+  display: flex;
+  gap: 15px;
+}
+.actions button {
+  width: 60px;
+  height: 60px;
+  background-color: #5137E7;
+  border-color: #FFFFFF;
+  border-radius: 10px;
+  padding: 5px;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+.block-status {
+  width: 380px;
+  height: 180px;
+  display: flex;
+  font-size: 64px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.status-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.status-timer {
+  font-size: 32px;
+}
+.date-picker {
+  width: 380px;
+  height: 52px;
+  background-color: #27AEC8;
+  color: #FFFFFF;
+  font-size: 36px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px;
+  border-radius: 8px;
+}
+.date-picker .nav-btn {
+  background: none;
+  border: none;
+  font-size: 36px;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+.excel-btn {
+  width: 380px;
+  height: 52px;
+  background-color: #3B73D7;
+  color: #FFFFFF;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.block-table {
+  width: 380px;
+  padding: 16px;
+}
+.block-table h2 {
+  text-align: center;
+  margin-bottom: 12px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  color: #FFFFFF;
+}
+th, td {
+  padding: 6px;
+  font-size: 14px;
+  text-align: center;
+}
+.color-b {
+  background-color: #25AFC7;
+}
+.color-c {
+  background-color: #3B73D7;
+}
+.status-timer
+{ font-size: 64px;}
+td,th {font-size: 16px;}
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+    padding: 16px;
+  }
+
+  .row {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .block,
+  .block-status,
+  .block-table,
+  .date-picker,
+  .excel-btn {
+    width: 100% !important;
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .block-time {
+    height: auto;
+    padding: 16px;
+  }
+
+  .time-display {
+    font-size: 48px;
+  }
+
+  .date-picker {
+    font-size: 28px;
+    height: 48px;
+    justify-content: space-between;
+  }
+
+  .date-picker .nav-btn {
+    font-size: 28px;
+  }
+
+  .excel-btn {
+    height: 48px;
+    font-size: 16px;
+  }
+
+  .actions {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .actions button {
+    width: 60px;
+    height: 60px;
+  }
+
+  table th, table td {
+    font-size: 12px;
+    padding: 4px;
+  }
+
+  .block-status {
+    height: auto;
+    padding: 16px;
+  }
+
+  .status-title {
+    font-size: 20px;
+  }
+
+  .status-timer {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+}
