@@ -41,7 +41,7 @@ function renderTables() {
       <td><span onclick="editSleep(${i}, 'end')">${s.end || "-"}</span></td>
 
       <td>${s.duration || "-"}</td>
-      <td><img src="icons/cross.svg" style="width:16px;cursor:pointer" onclick="deleteSleep(${i})" /></td>
+      <td><img src="cross.svg" style="width:16px;cursor:pointer" onclick="deleteSleep(${i})" /></td>
     `;
     sleepTable.appendChild(tr);
   });
